@@ -6,7 +6,7 @@
 #    By: dfranke <dfranke@student.42wolfsburg.de>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/25 18:24:09 by dfranke           #+#    #+#              #
-#    Updated: 2022/01/04 16:14:38 by dfranke          ###   ########.fr        #
+#    Updated: 2022/01/06 13:30:03 by dfranke          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ $(NAME):	$(OBJS)
 	@	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	@	$(RM) $(OBJS) $(NAME)
+	@	$(RM) $(OBJS)
 
 fclean:	clean
 	@	$(RM) $(NAME)
