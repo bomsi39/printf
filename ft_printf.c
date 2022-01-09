@@ -6,7 +6,7 @@
 /*   By: dfranke <dfranke@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/16 16:50:03 by dfranke           #+#    #+#             */
-/*   Updated: 2022/01/04 17:18:43 by dfranke          ###   ########.fr       */
+/*   Updated: 2022/01/10 00:03:51 by dfranke          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_format(char c, va_list *arg, int *len)
 	if (c == 's')
 		*len += ft_putstr_ret(va_arg(*arg, char *));
 	if (c == 'd' || c == 'i')
-		*len += ft_putascii(va_arg(*arg, signed int), 10, 0, 0);
+		*len += ft_putascii(va_arg(*arg, signed int), 10, 0, 's');
 	if (c == 'u')
 		*len += ft_putascii(va_arg(*arg, unsigned int), 10, 0, 0);
 	if (c == 'p')
