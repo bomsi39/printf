@@ -6,7 +6,7 @@
 #    By: dfranke <dfranke@student.42wolfsburg.de>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/05/25 18:24:09 by dfranke           #+#    #+#              #
-#    Updated: 2022/01/06 13:30:03 by dfranke          ###   ########.fr        #
+#    Updated: 2022/01/10 01:22:46 by dfranke          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ RM		=	rm -f
 
 AR		=	ar rcs
 
-SRCS	=	ft_printf.c ft_putstuff.c ft_printf_utils.c
+SRCS	=	ft_printf.c ft_putstuff.c
 
 OBJS	=	$(SRCS:.c=.o)
 

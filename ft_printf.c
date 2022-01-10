@@ -6,7 +6,7 @@
 /*   By: dfranke <dfranke@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/16 16:50:03 by dfranke           #+#    #+#             */
-/*   Updated: 2022/01/10 00:03:51 by dfranke          ###   ########.fr       */
+/*   Updated: 2022/01/10 01:23:54 by dfranke          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,15 @@ void	ft_format(char c, va_list *arg, int *len)
 	if (c == 's')
 		*len += ft_putstr_ret(va_arg(*arg, char *));
 	if (c == 'd' || c == 'i')
-		*len += ft_putascii(va_arg(*arg, signed int), 10, 0, 's');
+		*len += ft_putascii(va_arg(*arg, signed int), B_10, DEC, SIG);
 	if (c == 'u')
-		*len += ft_putascii(va_arg(*arg, unsigned int), 10, 0, 0);
+		*len += ft_putascii(va_arg(*arg, unsigned int), B_10, DEC, NO_FLAG);
 	if (c == 'p')
-		*len += ft_putascii(va_arg(*arg, unsigned long long), 16, 'a', 'p');
+		*len += ft_putascii(va_arg(*arg, unsigned long long), B_16, LHEX, PTR);
 	if (c == 'x')
-		*len += ft_putascii(va_arg(*arg, unsigned int), 16, 'a', 0);
+		*len += ft_putascii(va_arg(*arg, unsigned int), B_16, LHEX, NO_FLAG);
 	if (c == 'X')
-		*len += ft_putascii(va_arg(*arg, unsigned int), 16, 'A', 0);
+		*len += ft_putascii(va_arg(*arg, unsigned int), B_16, UHEX, NO_FLAG);
 	if (c == '%')
 		*len += write(1, "%", 1);
 }

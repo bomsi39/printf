@@ -6,7 +6,7 @@
 /*   By: dfranke <dfranke@student.42wolfsburg.de>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/23 20:44:38 by dfranke           #+#    #+#             */
-/*   Updated: 2022/01/10 00:18:57 by dfranke          ###   ########.fr       */
+/*   Updated: 2022/01/10 01:21:31 by dfranke          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ size_t	ft_putstr_ret(char *s)
 		write(1, s, len);
 	return (len);
 }
+
 int	digit(unsigned long long n, int base)
 {
 	int		i;
